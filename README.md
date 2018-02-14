@@ -18,13 +18,11 @@ docker run -it -v {config_path}/config.yml:/opt/config.yml tacyuuhon/clickhouse-
 If you want to rebuild images.
 You can be like this:
 ```
-
 # v1.0.1
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 git checkout v1.0.1
 docker build --no-cache -t {namespace}/{repository_name} . 
-
 ```
 
 # Reload config.yml
