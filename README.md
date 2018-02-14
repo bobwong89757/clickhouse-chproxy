@@ -4,9 +4,10 @@ Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
+* `1.1.0` [(1.1.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.1.0/Dockerfile)
 
-* `1.0.1` [(1.0.1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.1/Dockerfile)
 
+Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacyuuhon/clickhouse-chproxy/)
 
 
 # Run
@@ -18,13 +19,12 @@ docker run -it -v {config_path}/config.yml:/opt/config.yml tacyuuhon/clickhouse-
 If you want to rebuild images.
 You can be like this:
 ```
-
-# v1.0.1
+# v1.1.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
-git checkout v1.0.1
-docker build --no-cache -t {namespace}/{repository_name} . 
 
+git checkout v1.1.0
+docker build --no-cache -t {namespace}/{repository_name} . 
 ```
 
 # Reload config.yml
@@ -33,5 +33,4 @@ You can use docker to send SIGHUP to reload the `config.yml`
 ```
 docker kill --signal="SIGHUP" {CONTAINER_ID|CONTAINER_NAME}
 ```
-
 
