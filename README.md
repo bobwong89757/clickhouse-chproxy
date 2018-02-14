@@ -22,7 +22,7 @@ You can be like this:
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 
-git checkout 1.2.0
+git checkout v1.2.0
 docker build --no-cache -t {namespace}/{repository_name} . 
 ```
 
